@@ -1,0 +1,17 @@
+[
+  {
+    "name": "MVC Blog",
+    "description": "The Model-View-Controller (MVC) is an architectural pattern which separates an application into three main groups of components: Models, Views, and Controllers.",
+    "add_details": "MVC is abbreviated as Model View Controller is a design pattern created for developing applications specifically web applications.Car driving mechanism is another example of the MVC model"
+  },
+  {
+    "name": "CodeBetter",
+    "description": "The CodeBetter blog aims to introduce developers to better tools, methodologies, and practices within software development.!",
+    "add_details": "The blog can definitely be trusted in terms of information as the writers post purely based on their personal experiences and knowledge. You will find plenty of code examples and innovative techniques here. It's perfect for developers who're focused on Microsoft technologies"
+  },
+  {
+    "name": "Geeks for Geeks",
+    "description": "An online journal for yearning programming software engineers who want to break interviews at huge tech organizations.",
+    "add_details": "Geeks for Geeks aims to provide answers to programming/algorithmic inquiries that are normally asked in meetings. It's a client-submitted blog, where amateur developers post their own meeting encounters. "
+  }
+]
