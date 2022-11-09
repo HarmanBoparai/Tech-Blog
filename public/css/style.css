@@ -19,7 +19,7 @@ header, .blog:not(:last-child) {
 .container{
   background-color:antiquewhite;
 }
-.flex-column{
+#background{
   background-color: lightpink;
   width: 100vw;
   min-height: 100vh;
