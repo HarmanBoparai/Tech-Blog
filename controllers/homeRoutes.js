@@ -18,9 +18,9 @@ router.get('/', async (req, res) => {
     const blogs = blogData.map((blog) => blog.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      blogs, 
-      logged_in: req.session.logged_in 
+    res.render('homepage', {
+      blogs,
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
@@ -57,7 +57,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       include: [{ model: Blog }],
     });
-    
+
     const user = userData.get({ plain: true });
     // console.log(user)
     res.render('dashboard', {
@@ -78,5 +78,29 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+router.get('/update/:id', async (req, res) => {
+  console.log(req.session.user_id)
+  let blog_id = req.params.id
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    const blogData = await Blog.findByPk(blog_id);
+    const blog=blogData.get({plain:true})
+
+    console.log(blog);
+   
+    res.render('update',{
+      ...blog,
+      logged_in:req.session.logged_in
+    })
+
+   
+  }
+  // catch (err) {
+  //   res.status(500).json(err);
+  // }
+});
+
+
 
 module.exports = router;

@@ -22,7 +22,7 @@
         <textarea class="form-input" id="blog-desc" name="blog-desc"></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Add/Create New Blog!</button>
+        <button type="submit" class="btn btn-primary" id="create_btn" data-id="{{Blog.id}}">Create New Blog!</button>
       </div>
     </form>
   </div>
@@ -37,7 +37,10 @@
         <h4><a href="/blog/{{Blog.id}}">{{Blog.name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{Blog.id}}">DELETE</button>
+        <button class="btn btn-sm btn-secondary" id="update_btn" data-id="{{Blog.id}}"><a href="/update/{{Blog.id}}">UPDATE</a></button>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" id="delete_btn" data-id="{{Blog.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}

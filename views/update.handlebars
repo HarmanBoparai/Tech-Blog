@@ -1,0 +1,25 @@
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Update Blog</h3>
+
+    <form class="form new-blog-form">
+      <div class="form-group">
+        <label for="blog-name">Title:</label>
+        <input class="form-input" type="text" id="blog-name" name="blog-name" value={{name}}/>
+      </div>
+      <div class="form-group">
+        <label for="add-details">Update details:</label>
+        <input class="form-input" type="text" id="add-details" name="add-details" value={{details}} />
+      </div>
+      <div class="form-group">
+        <label for="blog-desc">Contents:</label>
+        <textarea class="form-input" id="blog-desc" name="blog-desc">{{description}}</textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" >Update Blog!</button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+<script src="./js/update.js"></script>
