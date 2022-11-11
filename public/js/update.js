@@ -26,3 +26,4 @@ const updateFormHandler = async (event) => {
   .querySelector('#update_btn')
   .addEventListener('submit', updateFormHandler);
 
+  
