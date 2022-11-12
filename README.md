@@ -17,6 +17,7 @@ N/A
 
 Some existing user login details to access the site are :
  email rehasmith@abc.com  password aman1234
+ email erharmanboparai@abc.com  password aman1234
 
 2.User can either login (if alrady registered on the site) or  any new user can signup on the site.
 ![login and signup](https://user-images.githubusercontent.com/112586779/201450618-c3aeff2c-5c67-4637-b596-2e376813962d.png)
