@@ -3,7 +3,10 @@
   <p>{{{get_emoji}}}</p>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <div class="row mt-4">
   <p>
-    <button class="btn btn-primary">Add Comment!</button>
+      <textarea class="form-input" type="text" id="comment" name="blog-desc"></textarea>
+    <button class="btn btn-primary blog-list" id="comment-btn"  data-id="{{blog.id}}">Add Comment!</button>
   </p>
+</div>
 </div>
